@@ -25,10 +25,5 @@ async def ping(ctx):
 async def bath(ctx):
     bath = f'{message.author.mention} 呼んだ？ねえ今呼んだ？呼んだよねぇｗｗ'
     await ctx.send(bath)
-    
-@client.event
-async def on_message(message):
-    if client.user in message.mentions: # 話しかけられたかの判定
-        await reply(message) # 返信する非同期関数を実行
 
 bot.run(token)
