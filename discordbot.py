@@ -21,9 +21,4 @@ async def ping(ctx):
 async def ping(ctx):
     await ctx.send('pong')
 
-@bot.commands()
-async def bath(ctx):
-    bath = f'{message.author.mention} 呼んだ？ねえ今呼んだ？呼んだよねぇｗｗ'
-    await ctx.send(bath)
-
 bot.run(token)
